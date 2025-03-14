@@ -1,0 +1,86 @@
+@use "variables";
+@use "mixins";
+
+
+/// Configuiracion del body
+body{
+  @include mixins.estilo_body;
+}
+
+/// Configuiracion del wrapper
+#wrapper{
+  @include mixins.estilo_wrapper;
+}
+
+///Configuramos el encabezado menu
+#profile{
+  @include mixins.ajustar_flex_column;
+  ///Escondemos con el mixin el texto y el párrafo
+  h1, p{
+    @include mixins.esconder
+  }
+
+  ///Ajustamos la imagen
+  img{
+    @include mixins.ajustar_imagen()
+  }
+  padding: 3vw;
+  height: 15vh;
+}
+
+///Configuramos el header
+#header {
+  ///Aquí centramos la imagen y lo demas
+  @include mixins.ajustar_flex_column;
+
+  ///Configuramos la lista llamando al mixin
+  nav ul,li,a{
+    @include mixins.cambiar_decorate_ulli;
+    ///Ahora aquí probamos el estilo de los botones
+
+    ///Aqui llamamos a los mixin para configurar los botones
+    li,a{
+      @include mixins.estilobotones;
+      @include mixins.centrar_linea;
+      @include mixins.selectores_boton;
+      padding: 1vw;
+      margin: 2vw;
+    }
+
+  }
+  ///Lo ponemos como sticky menu con el mixin
+  @include mixins.stickymenu;
+}
+
+///Configuramos los estilos de la sección
+section {
+  text-align: justify;
+
+  h2 {
+    text-align: center;
+    padding: 1vw;
+    background-color: white;
+  }
+
+  padding: 5vh;
+
+  ///Le asignamos el valor del fondo al contenedor
+  background-color: variables.$fondo_informacion;
+
+  #contact_url li, a{
+    @include mixins.cambiar_decorate_ulli;
+    @include mixins.selectores_boton;
+    @include mixins.centrar_linea;
+    width: 80%;
+  }
+}
+
+
+///Añadimos el footeer para darle un estilo
+footer{
+  background-color: lightgray;
+
+  ///Llamamos al mixin para centar la linea de los derechos de autor
+  @include mixins.centrar_linea;
+  padding: 3vh;
+}
