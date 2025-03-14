@@ -16,7 +16,7 @@ body {
   justify-content: center;
   align-items: center;
   padding: 3vw;
-  height: 15vh;
+  height: 12vh;
 }
 #profile h1, #profile p {
   display: none;
@@ -46,8 +46,8 @@ body {
 #header nav ul li, #header nav ul a, #header li li, #header li a, #header a li, #header a a {
   background-color: #51e1e5;
   text-align: center;
-  padding: 1vw;
-  margin: 2vw;
+  padding: 0.5vw;
+  margin: 1vw;
 }
 #header nav ul li:hover, #header nav ul a:hover, #header li li:hover, #header li a:hover, #header a li:hover, #header a a:hover {
   background-color: white;
@@ -97,6 +97,29 @@ footer {
   background-color: lightgray;
   text-align: center;
   padding: 3vh;
+}
+
+@media (min-width: 800px) {
+  #wrapper {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-areas: "menu content";
+    height: 100vh;
+  }
+  #header {
+    display: grid;
+    grid-area: menu;
+    height: 100vh;
+  }
+  #sectionsdiv {
+    display: grid;
+    grid-area: content;
+    overflow-y: auto;
+  }
+  section {
+    width: 60%;
+    margin: auto;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

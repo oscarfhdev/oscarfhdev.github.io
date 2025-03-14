@@ -1,8 +1,8 @@
 @use "variables";
 
 ///Esconder los elementos
-@mixin esconder{
-  display: none;
+@mixin esconder($estado: none){
+  display: $estado;
 }
 
 ///Mixin para aplicar el color

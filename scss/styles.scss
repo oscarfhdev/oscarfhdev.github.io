@@ -25,7 +25,7 @@ body{
     @include mixins.ajustar_imagen()
   }
   padding: 3vw;
-  height: 15vh;
+  height: 12vh;
 }
 
 ///Configuramos el header
@@ -43,8 +43,8 @@ body{
       @include mixins.estilobotones;
       @include mixins.centrar_linea;
       @include mixins.selectores_boton;
-      padding: 1vw;
-      margin: 2vw;
+      padding: 0.5vw;
+      margin: 1vw;
     }
 
   }
@@ -67,6 +67,7 @@ section {
   ///Le asignamos el valor del fondo al contenedor
   background-color: variables.$fondo_informacion;
 
+  ///A la última sección, le añadimos los mixins de los botones
   #contact_url li, a{
     @include mixins.cambiar_decorate_ulli;
     @include mixins.selectores_boton;
@@ -83,4 +84,34 @@ footer{
   ///Llamamos al mixin para centar la linea de los derechos de autor
   @include mixins.centrar_linea;
   padding: 3vh;
+}
+
+
+/// Aqui tenemos el media a 850px para tener un diseno responsivo para tablet y ordenador
+@media (min-width: 800px) {
+
+  ///Le hacemos el grid al wrapper
+  #wrapper{
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-areas: "menu content";
+    height: 100vh;
+  }
+
+  #header{
+    display: grid;
+    grid-area: menu;
+    height: 100vh;
+  }
+
+  #sectionsdiv{
+    display: grid;
+    grid-area: content;
+    overflow-y: auto;
+  }
+
+  section{
+    width: 60%;
+    margin: auto;
+  }
 }
