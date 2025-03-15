@@ -6,7 +6,6 @@ body {
 }
 
 #wrapper {
-  height: 100vh;
   width: 100%;
 }
 
@@ -35,7 +34,9 @@ body {
   width: 100%;
   top: 0;
   position: sticky;
+  z-index: 1;
   background-color: lightgrey;
+  overflow: visible;
 }
 #header nav ul, #header li, #header a {
   text-decoration: none;
@@ -44,21 +45,24 @@ body {
   margin: 0;
 }
 #header nav ul li, #header li li, #header a li {
-  background-color: #51e1e5;
   text-align: center;
+}
+#header nav ul a, #header li a, #header a a {
+  display: block;
+  background-color: #51e1e5;
   padding: 0.5vw;
   margin: 1vw;
 }
-#header nav ul li:hover, #header li li:hover, #header a li:hover {
+#header nav ul a:hover, #header li a:hover, #header a a:hover {
   background-color: white;
 }
-#header nav ul li:active, #header li li:active, #header a li:active {
+#header nav ul a:active, #header li a:active, #header a a:active {
   background-color: pink;
 }
-#header nav ul li:link, #header li li:link, #header a li:link {
+#header nav ul a:link, #header li a:link, #header a a:link {
   color: red;
 }
-#header nav ul li:visited, #header li li:visited, #header a li:visited {
+#header nav ul a:visited, #header li a:visited, #header a a:visited {
   color: red;
 }
 
@@ -82,16 +86,19 @@ section #contact_url li, section #contact_url a {
   padding: 0;
   margin: 0;
 }
-section #contact_url li:hover, section #contact_url a:hover {
+section #contact_url a {
+  display: block;
+}
+section #contact_url a:hover {
   background-color: white;
 }
-section #contact_url li:active, section #contact_url a:active {
+section #contact_url a:active {
   background-color: pink;
 }
-section #contact_url li:link, section #contact_url a:link {
+section #contact_url a:link {
   color: red;
 }
-section #contact_url li:visited, section #contact_url a:visited {
+section #contact_url a:visited {
   color: red;
 }
 
@@ -106,7 +113,8 @@ footer {
     display: grid;
     grid-template-columns: 1fr 5fr;
     grid-template-areas: "menu content";
-    height: 100vh;
+    height: 100%;
+    overflow-y: auto;
   }
   #header {
     display: grid;
@@ -127,6 +135,7 @@ footer {
   #sectionsdiv {
     display: grid;
     grid-area: content;
+    height: 100vh;
     overflow-y: auto;
   }
   section {

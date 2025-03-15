@@ -20,7 +20,6 @@
 
 /// Creamos el wrapper del modo de movil
 @mixin estilo_wrapper{
-  height: 100vh;
   width: 100%;
 }
 
@@ -36,7 +35,9 @@
   width: 100%;
   top: 0;
   position: sticky;
+  z-index: 1;//Para que no se quede atrás
   background-color: variables.$fondo_encabezado;
+  overflow: visible;
 }
 
 ///Creamos un mixin para el flex row{
@@ -64,6 +65,7 @@
 
 /// Mixin para darle estilo a los botones
 @mixin estilobotones{
+  display: block;
   background-color: variables.$azul_personalizado;
 
 }

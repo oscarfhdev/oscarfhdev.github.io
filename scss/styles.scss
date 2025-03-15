@@ -40,8 +40,10 @@ body{
 
     ///Aqui llamamos a los mixin para configurar los botones
     li{
-      @include mixins.estilobotones;
       @include mixins.centrar_linea;
+    }
+    a{
+      @include mixins.estilobotones;
       @include mixins.selectores_boton;
       padding: 0.5vw;
       margin: 1vw;
@@ -70,10 +72,16 @@ section {
   ///A la última sección, le añadimos los mixins de los botones
   #contact_url {
     padding: 0;
+    ///Centramos las lineas
     @include mixins.centrar_linea;
     li, a {
       @include mixins.cambiar_decorate_ulli;
+    }
+
+    ///Ponemos el <a> como bloxck y le aplicamos los estilos
+    a{
       @include mixins.selectores_boton;
+      display: block;
     }
   }
 }
@@ -96,15 +104,18 @@ footer{
     display: grid;
     grid-template-columns: 1fr 5fr;
     grid-template-areas: "menu content";
-    height: 100vh;
+    height: 100%;
+    overflow-y: auto;
   }
 
+  ///Personalizamos el header haciendo algunos ajustes para que cuadre bien
   #header{
     display: grid;
     grid-area: menu;
     height: 100vh;
     #profile {
       height: 70%;
+      ///Aquí mostramos con el mixin el campo que habíamos escondido
       h1,p{
         @include mixins.esconder(block);
         @include mixins.centrar_linea;
@@ -117,12 +128,15 @@ footer{
   ;
   }
 
+  ///Al div que engloba todas las secciones lo ponemos a la derecha
   #sectionsdiv{
     display: grid;
     grid-area: content;
+    height: 100vh;
     overflow-y: auto;
   }
 
+  ///Ponemos los div más pequeños y en el centro
   section{
     width: 60%;
     margin: auto;
