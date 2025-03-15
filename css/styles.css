@@ -43,22 +43,22 @@ body {
   padding: 0;
   margin: 0;
 }
-#header nav ul li, #header nav ul a, #header li li, #header li a, #header a li, #header a a {
+#header nav ul li, #header li li, #header a li {
   background-color: #51e1e5;
   text-align: center;
   padding: 0.5vw;
   margin: 1vw;
 }
-#header nav ul li:hover, #header nav ul a:hover, #header li li:hover, #header li a:hover, #header a li:hover, #header a a:hover {
+#header nav ul li:hover, #header li li:hover, #header a li:hover {
   background-color: white;
 }
-#header nav ul li:active, #header nav ul a:active, #header li li:active, #header li a:active, #header a li:active, #header a a:active {
+#header nav ul li:active, #header li li:active, #header a li:active {
   background-color: pink;
 }
-#header nav ul li:link, #header nav ul a:link, #header li li:link, #header li a:link, #header a li:link, #header a a:link {
+#header nav ul li:link, #header li li:link, #header a li:link {
   color: red;
 }
-#header nav ul li:visited, #header nav ul a:visited, #header li li:visited, #header li a:visited, #header a li:visited, #header a a:visited {
+#header nav ul li:visited, #header li li:visited, #header a li:visited {
   color: red;
 }
 
@@ -72,24 +72,26 @@ section h2 {
   padding: 1vw;
   background-color: white;
 }
-section #contact_url li, section a {
+section #contact_url {
+  padding: 0;
+  text-align: center;
+}
+section #contact_url li, section #contact_url a {
   text-decoration: none;
   list-style: none;
   padding: 0;
   margin: 0;
-  text-align: center;
-  width: 80%;
 }
-section #contact_url li:hover, section a:hover {
+section #contact_url li:hover, section #contact_url a:hover {
   background-color: white;
 }
-section #contact_url li:active, section a:active {
+section #contact_url li:active, section #contact_url a:active {
   background-color: pink;
 }
-section #contact_url li:link, section a:link {
+section #contact_url li:link, section #contact_url a:link {
   color: red;
 }
-section #contact_url li:visited, section a:visited {
+section #contact_url li:visited, section #contact_url a:visited {
   color: red;
 }
 
@@ -110,6 +112,17 @@ footer {
     display: grid;
     grid-area: menu;
     height: 100vh;
+  }
+  #header #profile {
+    height: 70%;
+  }
+  #header #profile h1, #header #profile p {
+    display: block;
+    text-align: center;
+  }
+  #header nav {
+    padding: 0;
+    margin: 0;
   }
   #sectionsdiv {
     display: grid;

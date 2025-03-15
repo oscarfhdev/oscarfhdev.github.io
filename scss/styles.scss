@@ -39,7 +39,7 @@ body{
     ///Ahora aquí probamos el estilo de los botones
 
     ///Aqui llamamos a los mixin para configurar los botones
-    li,a{
+    li{
       @include mixins.estilobotones;
       @include mixins.centrar_linea;
       @include mixins.selectores_boton;
@@ -68,14 +68,15 @@ section {
   background-color: variables.$fondo_informacion;
 
   ///A la última sección, le añadimos los mixins de los botones
-  #contact_url li, a{
-    @include mixins.cambiar_decorate_ulli;
-    @include mixins.selectores_boton;
+  #contact_url {
+    padding: 0;
     @include mixins.centrar_linea;
-    width: 80%;
+    li, a {
+      @include mixins.cambiar_decorate_ulli;
+      @include mixins.selectores_boton;
+    }
   }
 }
-
 
 ///Añadimos el footeer para darle un estilo
 footer{
@@ -102,6 +103,18 @@ footer{
     display: grid;
     grid-area: menu;
     height: 100vh;
+    #profile {
+      height: 70%;
+      h1,p{
+        @include mixins.esconder(block);
+        @include mixins.centrar_linea;
+      }
+    }
+    nav{
+      padding: 0;
+      margin: 0;
+    }
+  ;
   }
 
   #sectionsdiv{
