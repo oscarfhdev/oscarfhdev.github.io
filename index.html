@@ -9,27 +9,47 @@
     </head>
 
     <body>
-        <div>
-            <ul>
-                <li>About me</li>
-                <li>Formation & Experience</li>
-                <li>Technologies</li>
-                <li>CONTACT ME</li>
-            </ul>
-        </div>
+        <div class="container-fluid vh-100 overflow-hidden">
+            <div class="row h-100">
+                <div class="col-6 h-100 d-flex flex-column bg-black overflow-hidden">
+                    <nav class="navbar navbar-expand">
+                        <ul class="navbar-nav m-5 gap-3">
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="./about_me.html">About me</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="./formation&experience.html">Formation & Experience</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="./technologies.html">Technologies</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link bg-light rounded-4 fw-bold text-black" href="./technologies.html">CONTACT ME</a>
+                            </li>
+                        </ul>
+                    </nav>
 
-        <img src="./images/me.png" alt="Me!">
+                    <div class="d-flex justify-content-center align-items-end flex-grow-1" style="overflow: hidden;">
+                        <img src="./images/me.png" alt="Me!"
+                             style="max-height: 100%;">
+                    </div>
 
 
-        <div>
-            <h3> Hi, I am</h3>
-            <h1>Óscar Fernández</h1>
-            <h4>Software Developer</h4>
+                </div>
 
-            <div>
-                <img src="./images/icons/@.png" alt="mail">
-                <img src="./images/icons/GitHub.png" alt="github">
-                <img src="./images/icons/linkedin.png" alt="linkedin">
+                <div class="col-6 h100 d-flex justify-content-center align-items-center">
+                    <div class="text-end">
+                        <h3>Hi, I am</h3>
+                        <h1 class="fw-bold">Óscar Fernández</h1>
+                        <h5>Software Developer</h5>
+
+                        <div class="d-flex justify-content-end gap-4 mt-4">
+                            <img src="./images/icons/@.png" alt="mail">
+                            <img src="./images/icons/GitHub.png" alt="github">
+                            <img src="./images/icons/linkedin.png" alt="linkedin">
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
