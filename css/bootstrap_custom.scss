@@ -1,5 +1,7 @@
 // Editamos las variables principales
 
+$primary: #B1EEF0;
+$secondary: #BBBBBB;
 
 
 
@@ -8,3 +10,12 @@
 
 
 // Configuramos a las clases características específicas
+
+.nav-link:hover {
+  font-weight: bold !important; // Así se tenemos uno en semibold se tiene en cuenta
+}
+
+a img:hover {
+  background-color: $secondary;
+  border-radius: 50%;
+}
