@@ -1,8 +1,8 @@
 // Editamos las variables principales
 
-$primary: #B1EEF0;
-$secondary: #BBBBBB;
-
+$primary: #B1EEF0; // Cambiamos el color principal
+$secondary: #BBBBBB; // Cambiamos el color secundario
+$font-family-base: 'Poppins', sans-serif; // Ponemos la fuente poppins, linkeada en el HTML, si no es posible la sustituye sans-serif
 
 
 // Importamos Bootstrap (después de las variables)
@@ -10,8 +10,6 @@ $secondary: #BBBBBB;
 
 
 // Configuramos a las clases características específicas
-
-
 .nav-link:hover {
   font-weight: bold !important; // Así se tenemos uno en semibold se tiene en cuenta
 }
@@ -23,8 +21,19 @@ $secondary: #BBBBBB;
   }
 }
 
+.hover-custom-about_me:hover{
+  background-color: lightskyblue !important;
+}
+
 .hover-custom-home:hover {
   background-color: $light;
   border-radius: 50%;
+}
 
+a{
+  color: inherit;
+
+  :hover {
+    font-weight: bold;
+  }
 }
