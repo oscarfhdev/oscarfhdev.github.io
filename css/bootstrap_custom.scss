@@ -11,11 +11,20 @@ $secondary: #BBBBBB;
 
 // Configuramos a las clases características específicas
 
+
 .nav-link:hover {
   font-weight: bold !important; // Así se tenemos uno en semibold se tiene en cuenta
 }
 
-a img:hover {
-  background-color: $secondary;
+.hover-custom-logos {
+  a img:hover {
+    background-color: $secondary;
+    border-radius: 1.2vw;
+  }
+}
+
+.hover-custom-home:hover {
+  background-color: $light;
   border-radius: 50%;
+
 }
