@@ -37,3 +37,17 @@ a{
     font-weight: bold;
   }
 }
+
+.custom-width{
+  width: 60px;
+}
+
+.contact-item{
+  transition: all 0.3s ease;
+
+  &:hover {
+    transform: translateX(5px);
+    background-color: $secondary;
+    border-radius: 2vw;
+  }
+}
