@@ -3,7 +3,15 @@
 $primary: #B1EEF0; // Cambiamos el color principal
 $secondary: #BBBBBB; // Cambiamos el color secundario
 $font-family-base: 'Poppins', sans-serif; // Ponemos la fuente poppins, linkeada en el HTML, si no es posible la sustituye sans-serif
-
+$grid-breakpoints:(
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px, //Cambiamos los breakpoints a nuestro gusto
+  xxl: 1420px,
+  xxxl: 1514px, //Añadimos uno nuevo
+);
 
 // Importamos Bootstrap (después de las variables)
 @import "../bootstrap-5.3.3/scss/bootstrap";

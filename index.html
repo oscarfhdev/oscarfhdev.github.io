@@ -12,23 +12,35 @@
 
     <body>
         <div class="container-fluid vh-100">
-            <div class="row h-100">
-                <div class="col-6 h-100 d-flex flex-column bg-black">
-                    <nav class="navbar navbar-expand">
-                        <ul class="navbar-nav m-5 gap-3">
-                            <li class="nav-item">
-                                <a class="nav-link text-white" href="./about_me.html">About me</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-white" href="./formation&experience.html">Formation & Experience</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-white" href="./technologies.html">Technologies</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link bg-light rounded-4 hover-custom-about_me fw-bold text-black" href="./contact_me.html">CONTACT ME</a>
-                            </li>
-                        </ul>
+            <div class="row vh-100">
+                <div class="col-6 vh-100 d-flex flex-column bg-black">
+                    <nav class="navbar navbar-expand-xxl">
+                        <div class="container-fluid">
+
+                            <!-- Botón hamburguesa -->
+                            <button class="navbar-toggler bg-secondary m-3 mb-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+
+                            <!-- Menú colapsable -->
+                            <div class="collapse navbar-collapse" id="navbarContent">
+                                <ul class="navbar-nav p-5 pt-1 p-xxl-5 gap-xxxl-4 gap-xxl-2">
+                                    <li class="nav-item">
+                                        <a class="nav-link text-white text-center" href="./about_me.html">About me</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link text-white text-center" href="./formation&experience.html">Formation & Experience</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link text-white text-center" href="./technologies.html">Technologies</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link bg-light rounded-4 hover-custom-about_me fw-bold text-black text-center" href="./contact_me.html">CONTACT ME</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
                     </nav>
 
                     <div class="d-flex justify-content-center align-items-end overflow-hidden">
