@@ -5,6 +5,7 @@ $secondary: #BBBBBB; // Cambiamos el color secundario
 $font-family-base: 'Poppins', sans-serif; // Ponemos la fuente poppins, linkeada en el HTML, si no es posible la sustituye sans-serif
 $grid-breakpoints:(
   xs: 0,
+  xsm: 350px,
   sm: 576px,
   md: 768px,
   lg: 992px,
