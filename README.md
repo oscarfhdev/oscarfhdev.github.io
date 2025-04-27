@@ -31,7 +31,7 @@ El archivo principal de configuración es `bootstrap_custom.scss`, donde he real
 - ✍️ **Fuente tipográfica**:  
   - `$font-family-base`: cambiado a `'Poppins'` 
 - 📱 **Breakpoints de Grid**:  
-  - Modificados `xxl`,  y añadidos nuevos (,`xsm`, `slg`, `xxxl`, )
+  - Modificados `xxl`,  y añadidos nuevos (`xsm`, `slg`, `xxxl`)
 - 🎯 **Comportamientos personalizados**:  
   - Hover en enlaces, estilos específicos, mejoras visuales en botones, animaciones suaves , centralizado de imágenes en carrusel, etc
 
