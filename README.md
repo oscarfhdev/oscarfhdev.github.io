@@ -17,7 +17,7 @@
 - **Bootstrap 5.3.3**  
 - **Git y GitHub** para control de versiones  
 - **Figma** para el diseño previo
-- 
+  
 ---
 
 ## 🎨 Personalización de Bootstrap
