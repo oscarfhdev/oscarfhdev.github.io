@@ -9,3 +9,11 @@
 [Ver página en GitHub Pages](https://oscarfhdev.github.io/)  
 
 ---
+
+## 🛠 Tecnologías utilizadas
+
+- **HTML5**  
+- **SASS** (edición directa de las fuentes de Bootstrap)  
+- **Bootstrap 5.3.3**  
+- **Git y GitHub** para control de versiones  
+- **Figma** para el diseño previo 
