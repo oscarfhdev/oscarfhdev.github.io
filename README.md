@@ -68,5 +68,3 @@ Este repositorio contiene los archivos necesarios para la página web, incluyend
 - `/formation&experience.html` → Página que describe mi formación académica y experiencia profesional.
 
 - `/technologies.html` → Página con información sobre las tecnologías que domino.
-
----
