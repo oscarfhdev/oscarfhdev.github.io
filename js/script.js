@@ -10,15 +10,15 @@ async function cargarContenido(pagina, titulo) {
 }
 
 function inicializarCarruseles() {
-    const carousels = document.querySelectorAll('.carousel');
-    carousels.forEach(carousel => {
-        new bootstrap.Carousel(carousel);
+    const carousels = document.querySelectorAll('.carousel'); // Buscamos en el HTML carruseles
+    carousels.forEach(carousel => { // Recorremos con un foreach los elementos
+        new bootstrap.Carousel(carousel); // Creamos el carrusel para que comience a moverse
     })
 }
 
-async function cargarYActivar(pagina) {
-    await cargarContenido(pagina); // Espera a que termine de cargar el contenido
-    inicializarCarruseles();       // Luego inicializa el carrusel
+async function cargarYActivar(pagina, titulo) {
+    await cargarContenido(pagina,titulo); // Espera a que termine de cargar el contenido
+    inicializarCarruseles(); // Luego inicializa el carrusel
 }
 
 function ajustarTitulo(titulo) {
