@@ -7,3 +7,15 @@ async function cargarContenido(pagina) {
         console.error('Error al cargar el contenido, por favor vuelve a intentarlo:', error);
     }
 }
+
+function inicializarCarruseles() {
+    const carousels = document.querySelectorAll('.carousel');
+    carousels.forEach(carousel => {
+        new bootstrap.Carousel(carousel);
+    })
+}
+
+async function cargarYActivar(pagina) {
+    await cargarContenido(pagina); // Espera a que termine de cargar el contenido
+    inicializarCarruseles();       // Luego inicializa el carrusel
+}
