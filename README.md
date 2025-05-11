@@ -1,9 +1,6 @@
 # 📄 Mi CV Personalizado con Bootstrap y SASS
 
-¡Bienvenidos! 🚀 Este proyecto consiste en una página web de currículum vitae diseñada primero en **Figma** y luego implementada utilizando **Bootstrap** con **SASS** personalizado.
-
-🔗 **Link al diseño en Figma:**  
-[Portafolio - Lenguaje de Marcas (Figma)](https://www.figma.com/design/oY4J4FqHy4awXPAUsUwjZ5/Portafolio---Lenguaje-de-Marcas?node-id=57-18&t=vOVg97QMgzeb5SnM-1)
+¡Bienvenidos! 🚀 Este proyecto consiste en una página web de currículum vitae implementada utilizando **Bootstrap** con **SASS** personalizado, además de funciones con JavaScript.
 
 🔗 **Versión online del CV:**  
 [Ver página en GitHub Pages](https://oscarfhdev.github.io/)  
@@ -43,16 +40,18 @@ El archivo principal de configuración es `bootstrap_custom.scss`, donde he real
 
 # Estructura del repositorio
 
-Este repositorio contiene los archivos necesarios para la página web, incluyendo Bootstrap, personalizaciones CSS, imágenes y archivos HTML.
+Este repositorio contiene los archivos necesarios para la página web, incluyendo Bootstrap, personalizaciones CSS, funciones con JavaScript imágenes y archivos HTML.
 
 ## 📂 Directorios y Archivos
 
 - `/bootstrap-5.3.3/` → Contiene los archivos fuente de **Bootstrap 5.3.3**, incluyendo los archivos de configuración, SASS, JS y la documentación asociada.
 
 - `/css/` → Archivos **CSS personalizados** que incluyen las modificaciones y estilos adicionales.
-
   - `bootstrap_custom.scss` → Archivo SCSS con las personalizaciones realizadas.
   - `bootstrap_custom.min.css` → Archivo CSS minificado con los estilos personalizados.
+
+- `/js/` → Archivos **CSS personalizados** que incluyen las modificaciones y estilos adicionales.
+  - `script.js` → Archivo JavaScript con las funciones para hacer Fetch.
 
 
 - `/images/` → Archivos de **imágenes** y **iconos**, incluyendo recursos gráficos para la web.
