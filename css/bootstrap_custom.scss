@@ -22,6 +22,7 @@ $grid-breakpoints:(
 // Configuramos a las clases características específicas
 .nav-link:hover {
   font-weight: bold !important; // Así se tenemos uno en semibold se tiene en cuenta
+  cursor: pointer;
 }
 
 .hover-custom-logos {
@@ -42,9 +43,9 @@ $grid-breakpoints:(
 
 a{
   color: inherit;
-
   :hover {
     font-weight: bold;
+    cursor: pointer;
   }
 }
 
